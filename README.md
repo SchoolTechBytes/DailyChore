@@ -13,7 +13,7 @@ All data is saved on the device, so it is still there after the app is closed or
 
 My purpose was to build a small but complete app that is useful at home, while practising Compose UI, state management, and persistent storage.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/EixlpOgyXIk)
 
 # Development Environment
 
