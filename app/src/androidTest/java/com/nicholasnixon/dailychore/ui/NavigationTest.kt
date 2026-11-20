@@ -27,11 +27,14 @@ class NavigationTest {
     @Test
     fun startsOnTodayAndSwitchesTabs() {
         tab("Today").assertIsSelected()
-        composeRule.onNodeWithText("chores done today", substring = true).assertExists()
+        composeRule.onNodeWithText("⭐", substring = true).assertExists()
 
         tab("Parent").performClick()
         tab("Parent").assertIsSelected()
-        composeRule.onNodeWithText("rewards set up", substring = true).assertExists()
+        // Parent is behind the PIN, so the PIN screen shows ("Create a … parent PIN" or "Enter parent PIN").
+        // (This test uses the real app, so it doesn't type a PIN: that would change the real PIN.)
+        composeRule.onNodeWithText("parent PIN", substring = true).assertExists()
+        composeRule.onNodeWithText("Add chore").assertDoesNotExist()
 
         tab("Rewards").performClick()
         tab("Rewards").assertIsSelected()

@@ -6,6 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.nicholasnixon.dailychore.data.dao.ChoreDao
 import com.nicholasnixon.dailychore.data.dao.PointsDao
+import com.nicholasnixon.dailychore.data.dao.ResetDao
 import com.nicholasnixon.dailychore.data.dao.RewardDao
 import com.nicholasnixon.dailychore.data.entities.Chore
 import com.nicholasnixon.dailychore.data.entities.PointsEntry
@@ -29,6 +30,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun choreDao(): ChoreDao
     abstract fun rewardDao(): RewardDao
     abstract fun pointsDao(): PointsDao
+    abstract fun resetDao(): ResetDao
 
     // companion object = things that belong to the class itself, like Java "static".
     companion object {

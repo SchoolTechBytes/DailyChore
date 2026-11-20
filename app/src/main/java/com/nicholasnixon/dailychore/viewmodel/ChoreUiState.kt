@@ -13,5 +13,8 @@ data class ChoreUiState(
     val rewards: List<Reward> = emptyList(),
     val balance: Int = 0,
     // A Set makes "is this chore done today?" a quick check: chore.id in completedTodayIds
-    val completedTodayIds: Set<Long> = emptySet()
+    val completedTodayIds: Set<Long> = emptySet(),
+    // Parent PIN: has one been created yet, and is the Parent screen unlocked right now?
+    val hasPin: Boolean = false,
+    val isParentUnlocked: Boolean = false
 )

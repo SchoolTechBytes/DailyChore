@@ -1,6 +1,72 @@
 <resources>
     <string name="app_name">Daily Chore</string>
+
+    <!-- Tabs / screen titles -->
     <string name="tab_today">Today</string>
     <string name="tab_rewards">Rewards</string>
     <string name="tab_parent">Parent</string>
+
+    <!-- Today (kid) screen. %1$d = a number filled in by the code.
+         <plurals> picks "one" or "other" so we get "1 point" but "2 points". -->
+    <plurals name="points_balance">
+        <item quantity="one">⭐ %1$d point</item>
+        <item quantity="other">⭐ %1$d points</item>
+    </plurals>
+    <plurals name="chores_done_today">
+        <item quantity="one">%1$d of %2$d chore done today</item>
+        <item quantity="other">%1$d of %2$d chores done today</item>
+    </plurals>
+    <string name="all_done">All done today! 🎉</string>
+    <string name="chore_points">+%1$d</string>
+    <string name="no_chores_kid">No chores yet. Ask a parent to add some in the Parent tab.</string>
+
+    <!-- Rewards screen -->
+    <plurals name="points_to_spend">
+        <item quantity="one">%1$d point to spend</item>
+        <item quantity="other">%1$d points to spend</item>
+    </plurals>
+    <plurals name="reward_cost">
+        <item quantity="one">%1$d point</item>
+        <item quantity="other">%1$d points</item>
+    </plurals>
+    <string name="redeem">Redeem</string>
+    <string name="reward_ready">Ready!</string>
+    <plurals name="points_to_go">
+        <item quantity="one">%1$d more point to go</item>
+        <item quantity="other">%1$d more points to go</item>
+    </plurals>
+    <string name="no_rewards_kid">No rewards yet. Ask a parent to add some.</string>
+
+    <!-- Parent screen -->
+    <string name="parent_subtitle">Set up chores and rewards</string>
+    <string name="section_chores">🧹 Chores</string>
+    <string name="section_rewards">🎁 Rewards</string>
+    <string name="chore_name">Chore name</string>
+    <string name="reward_name">Reward name</string>
+    <string name="points_label">Points</string>
+    <string name="cost_label">Cost</string>
+    <string name="add_chore">Add chore</string>
+    <string name="add_reward">Add reward</string>
+    <string name="delete_item">Delete %1$s</string>
+    <string name="parent_no_chores">No chores yet. Add one above.</string>
+    <string name="parent_no_rewards">No rewards yet. Add one above.</string>
+
+    <!-- Parent PIN -->
+    <string name="pin_create_title">Create a 4-digit parent PIN</string>
+    <string name="pin_confirm_title">Enter the PIN again to confirm</string>
+    <string name="pin_enter_title">Enter parent PIN</string>
+    <string name="pin_wrong">Wrong PIN. Try again.</string>
+    <string name="pin_mismatch">The PINs didn\'t match. Start again.</string>
+    <string name="pin_dots">%1$d of %2$d digits entered</string>
+    <string name="pin_backspace">Delete last digit</string>
+    <string name="pin_forgot">Forgot PIN?</string>
+    <string name="reset_title">Reset everything?</string>
+    <string name="reset_message">This deletes the PIN and ALL chores, rewards and points. This cannot be undone.</string>
+    <string name="reset_confirm">Erase &amp; reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="change_pin_current">Current PIN</string>
+    <string name="change_pin_new">New PIN</string>
+    <string name="change_pin_wrong">Current PIN is wrong.</string>
+    <string name="save">Save</string>
 </resources>
